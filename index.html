@@ -9,18 +9,14 @@
       This is the main page for thewizardwilliam.github.io.
     </p>
     <br />
-    <button onclick="toggle">View Liscense</button>
+    <button onclick="view">View Liscense</button>
     <dialog id="liscense">
       abc
     </dialog>
     <script>
       let l = document.getElementById("l");
-      function toggle() {
-        if (l.open == "true") {
-          l.open = "false";
-        } else if (l.open == "false") {
-          l.open == "true";
-        }
+      function view() {
+        l.show();
       }
     </script>
   </body>
