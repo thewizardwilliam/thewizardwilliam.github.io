@@ -1,1 +1,1 @@
-window.location.replace(document.getElementsByTagName("redirect")[0].url);
+window.location.replace(document.getElementsByTagName("redirect")[0].href);
