@@ -1,1 +1,3 @@
-window.location.replace(document.getElementsByTagName("redirect")[0].innerHTML);
+let r = document.getElementsByTagName("redirect")[0];
+r.hidden = true;
+window.location.replace(r.innerHTML);
