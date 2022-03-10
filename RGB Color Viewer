@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Viewer</title>
+</head>
+<body>
+    <span>R</span><input type="range" id="r" value="0" min="0" max="255" oninput="col()"><span id="rVal">0</span>
+    <br />
+    <span>G</span><input type="range" id="g" value="0" min="0" max="255" oninput="col()"><span id="gVal">0</span>
+    <br />
+    <span>B</span><input type="range" id="b" value="0" min="0" max="255" oninput="col()"><span id="bVal">0</span>
+    <br />
+    <svg id="output" style="background-color:#000" width="100" height="100">
+        <circle cx="50" cy="50" r="50" fill="RGB(0,0,0)" />
+    </svg>
+    <br />
+    <span>In CSS RGB format: </span><span id="rgbDsply">RGB(0,0,0)</span>
+    <script>
+        function col() {
+            let r = document.getElementById("r").value;
+            let g = document.getElementById("g").value;
+            let b = document.getElementById("b").value;
+            document.getElementById("output").outerHTML = '<svg id="output" style="background-color:#000" width="100" height="100"><circle cx="50" cy="50" r="50" fill="RGB('+r+','+g+','+b+')" /></svg>';
+            document.getElementById("rVal").innerHTML = r;
+            document.getElementById("gVal").innerHTML = g;
+            document.getElementById("bVal").innerHTML = b;
+            document.getElementById("rgbDsply").innerHTML = "RGB("+r+","+g+","+b+")";
+        }
+    </script>
+</body>
+</html>
