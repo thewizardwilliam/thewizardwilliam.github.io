@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <textarea id="t" cols="30" rows="10" placeholder="Plaintext or full URL"></textarea>
+    <button type="submit" onclick="qr()">Generate QR Code</button>
+    <image src hidden id="q" />
+    <script>
+        function qr() {
+            let tf = encodeURI(document.getElementById("t").value);
+            let q = document.getElementById("q");
+            q.src = "https://chart.googleapis.com/chart?cht=qr&chl="+tf.toString()+"&chs=500x500";
+            q.hidden = false;
+        }
+    </script>
+</body>
+</html>
