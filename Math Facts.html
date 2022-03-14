@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Facts</title>
+</head>
+<body>
+    <span id="q">1 &times; 1 = </span>
+    <input type="number" id="a" min="1" max="144" minlength="1" maxlength="3">
+    <br />
+    <button onclick="check()">Check</button>
+    <script>
+        let q;
+        let x = 1;
+        let y = 1;
+        let a;
+        function check() {
+            a = document.getElementById("a");
+            if (a.value == x * y) {
+                if (y == 12) {
+                    if (x == 12) {
+                        alert("You have completed today's practice!")
+                    } else {
+                        x++;
+                        y = 1;
+                    }
+                } else {
+                    y++;
+                }
+                document.getElementById("q").innerHTML = x+" &times; "+y+" = ";
+            } else alert("Incorrect. Try again.");
+            a.focus()
+        }
+    </script>
+</body>
+</html>
