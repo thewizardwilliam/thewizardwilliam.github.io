@@ -15,28 +15,28 @@
     <script>
         let i = 0;
         let q;
-        let x = 1;
-        let y = 1;
+        sessionStorage.x = 1;
+        sessionStorage.y = 1;
         let a = document.getElementById("a");
         a.addEventListener("keyup", function(event) {if (event.keyCode === 13) {document.getElementsByTagName("button")[0].click()}});
         function check() {
             a = document.getElementById("a");
-            if (a.value == x * y) {
-                if (y == 12) {
-                    if (x == 12) {
+            if (a.value == sessionStorage.x * sessionStorage.y) {
+                if (sessionStorage.y == 12) {
+                    if (sessionStorage.x == 12) {
                         if (i != 0) {
                             i = " with "+i+" wrong guesses.";
                         }
                         else i = " with no wrong guesses!";
                         alert("You have completed today's practice"+i)
                     } else {
-                        x++;
-                        y = 1;
+                        sessionStorage.x = sessionStorage.x + 1;
+                        sessionStorage.y = 1;
                     }
                 } else {
-                    y++;
+                    sessionStorage.y = sessionStorage.y + 1;
                 }
-                document.getElementById("q").innerHTML = x+" &times; "+y+" = ";
+                document.getElementById("q").innerHTML = sessionStorage.x+" &times; "+sessionStorage.y+" = ";
             } else {
                 alert("Incorrect. Try again.");
                 i++;
