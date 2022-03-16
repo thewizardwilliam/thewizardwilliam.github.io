@@ -25,7 +25,8 @@
                 if (sessionStorage.y == 12) {
                     if (sessionStorage.x == 12) {
                         if (i != 0) {
-                            i = " with "+i+" wrong guesses.";
+                            if (i != 1) i = " with "+i+" wrong guesses.";
+                            else i = "with only "+" wrong guess!";
                         }
                         else i = " with no wrong guesses!";
                         alert("You have completed today's practice"+i)
