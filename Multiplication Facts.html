@@ -16,7 +16,8 @@
         let q;
         let x = 1;
         let y = 1;
-        let a;
+        let a = document.getElementById("a");
+        a.addEventListener("keyup", function(event) {if (event.keyCode === 13) {document.getElementsByTagName("myBtn")[0].click()}});
         function check() {
             a = document.getElementById("a");
             if (a.value == x * y) {
