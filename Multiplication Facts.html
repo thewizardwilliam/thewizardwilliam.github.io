@@ -13,6 +13,7 @@
     <br />
     <button onclick="check()">Check</button>
     <script>
+        let i = 0;
         let q;
         let x = 1;
         let y = 1;
@@ -36,6 +37,8 @@
             a.focus()
             a.value = "";
         }
+        let s = new URLSearchParams(location.hash);
+        if (s != null) {alert(atob(s))};
     </script>
 </body>
 </html>
