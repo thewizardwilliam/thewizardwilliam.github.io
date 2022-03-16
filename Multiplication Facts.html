@@ -24,7 +24,11 @@
             if (a.value == x * y) {
                 if (y == 12) {
                     if (x == 12) {
-                        alert("You have completed today's practice!")
+                        if (i != 0) {
+                            i = " with "+i+" wrong guesses";
+                        }
+                        else i = "";
+                        alert("You have completed today's practice"+i+"!")
                     } else {
                         x++;
                         y = 1;
@@ -33,7 +37,10 @@
                     y++;
                 }
                 document.getElementById("q").innerHTML = x+" &times; "+y+" = ";
-            } else alert("Incorrect. Try again.");
+            } else {
+                alert("Incorrect. Try again.");
+                i++;
+            }
             a.focus()
             a.value = "";
         }
