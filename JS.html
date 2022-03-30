@@ -9,7 +9,7 @@
       let p = new URLSearchParams(location.search);
       if (p.has("JS")) {
         document.write("<script>"+atob(p.get("JS"))+"<"+"/"+"script>");
-      } else document.write("<h1 style='background-color: #f00;'>No JavaScript Identified.</h1><p>If you don't understand the syntax for the JS parameter, enter some JavaScript here to generate a link that will run the specified JavaScript:</p><br><textarea id='a'></textarea><button onclick='copy()'>Copy</button><script>function copy() {navigator.clipboard.writeText(btoa(document.getElementById('a')))}"+"</"+"script>");
+      } else document.write("<h1 style='background-color: #f00;'>No JavaScript Identified.</h1><p>If you don't understand the syntax for the JS parameter, enter some JavaScript here to generate a link that will run the specified JavaScript:</p><br><textarea id='a'></textarea><button onclick='copy()'>Copy</button><script>function copy() {navigator.clipboard.writeText('https://thewizardwilliam.github.io/JS.html?JS='+btoa(document.getElementById('a').value))}"+"</"+"script>");
     </script>
   </body>
 </html>
