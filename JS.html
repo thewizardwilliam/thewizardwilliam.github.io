@@ -8,7 +8,7 @@
     <script>
       let p = new URLSearchParams(location.search);
       if (p.has("JS")) {
-        document.write("<script>"+btoa(p.get("JS"))+"<"+"/"+"script>");
+        document.write("<script>"+decodeURI(p.get("JS"))+"<"+"/"+"script>");
       } else document.write("<h1 style='background-color: #f00;'>No JavaScript Identified.</h1>");
     </script>
   </body>
