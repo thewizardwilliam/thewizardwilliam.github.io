@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>&#11822JS - thewizardwilliam.github.io</title>
+    <link rel="icon" href="Sarcasm%20Icon.svg">
+  </head>
+  <body>
+    <script>
+      let p = new URLSearchParams(location.search);
+      if (p.has("JS")) {
+        document.write("<script>"+decodeURI(p.get("JS"))+"<"+"/"+"script>");
+      } else document.write("<h1 style='background-color: #f00;'>No JavaScript Identified.</h1>");
+    </script>
+  </body>
+</html>
