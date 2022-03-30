@@ -9,7 +9,7 @@
       let p = new URLSearchParams(location.search);
       if (p.has("HTML")) {
         document.write(decodeURI(p.get("HTML")));
-      } else document.write("<h1 style='background-color: #f00;'>No HTML Identified.</h1><p>If you don't understand the syntax for the HTML parameter, enter some HTML here to generate a link that will run the specified HTML:</p><br><textarea id='a'></textarea><button onclick='copy()'>Copy</button><script>function copy() {navigator.clipboard.writeText('https://thewizardwilliam.github.io/HTML.html?HTML='+encodeURI(document.getElementById('a').value))}"+"</"+"script>");
+      } else document.write("<h1 style='background-color: #f00;'>No HTML Identified.</h1><p>If you don't understand the syntax for the HTML parameter, enter some HTML here to generate a link that will run the specified HTML:</p><br><textarea id='a' style='font-family: monospace;' autocapitalize='false' spellcheck='false' autocorrect='false'></textarea><button onclick='copy()'>Copy</button><script>function copy() {navigator.clipboard.writeText('https://thewizardwilliam.github.io/HTML.html?HTML='+encodeURI(document.getElementById('a').value))}"+"</"+"script>");
     </script>
   </body>
 </html>
