@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <button style id="up1" onclick="down1()">1</button>
+    <button style id="up2" onclick="down2()">2</button>
+    <button style id="up3" onclick="down3()">3</button>
+    <button style id="up4" onclick="down4()">4</button>
+    <button style id="up5" onclick="down5()">5</button>
+    <button style id="up6" onclick="down6()">6</button>
+    <button style id="up7" onclick="down7()">7</button>
+    <button style id="up8" onclick="down8()">8</button>
+    <button style id="up9" onclick="down9()">9</button>
+    <br />
+    <br />
+    <button onclick="rollTwoDice()">Roll Twice</button>
+    <br />
+    <button onclick="rollOneDie()">Roll Once</button>
+    <br />
+    <br />
+    <button onclick="javascript:location.reload()">Play Again</button>
+    <br />
+    <br />
+    <span>For 1-Player Rounds Only:&Tab;</span><span id="numRollsSolo">You Haven't Rolled yet.</span>
+    <script>
+        let turnsTakenSolo = Number(0);
+
+        var up1 = document.getElementById("up1");
+
+        function down1() {
+            up1.hidden = "true";
+        }
+        var up2 = document.getElementById("up2");
+
+        function down2() {
+            up2.hidden = "true";
+        }
+        var up3 = document.getElementById("up3");
+
+        function down3() {
+            up3.hidden = "true";
+        }
+        var up4 = document.getElementById("up4");
+
+        function down4() {
+            up4.hidden = "true";
+        }
+        var up5 = document.getElementById("up5");
+
+        function down5() {
+            up5.hidden = "true";
+        }
+        var up6 = document.getElementById("up6");
+
+        function down6() {
+            up6.hidden = "true";
+        }
+        var up7 = document.getElementById("up7");
+
+        function down7() {
+            up7.hidden = "true";
+        }
+        var up8 = document.getElementById("up8");
+
+        function down8() {
+            up8.hidden = "true";
+        }
+        var up9 = document.getElementById("up9");
+
+        function down9() {
+            up9.hidden = "true";
+        }
+        var up10 = document.getElementById("up10");
+
+        function down10() {
+            up10.hidden = "true";
+        }
+        function rollTwoDice() {
+            var roll1 = Math.floor(Math.random() * 6) + 1;
+            var roll2 = Math.floor(Math.random() * 6) + 1;
+            alert("Your roll is " + roll1 + " and " + roll2 + ".");
+            turnsTakenSolo++;
+            if (turnsTakenSolo == 1) {
+                document.getElementById("numRollsSolo").innerHTML = "You've taken 1 turn.";
+            } else if (turnsTakenSolo > 1) {
+                document.getElementById("numRollsSolo").innerHTML = "You've taken "+turnsTakenSolo+" turns."
+            }
+        }
+
+        function rollOneDie() {
+            var roll1 = Math.floor(Math.random() * 6) + 1;
+            alert("Your roll is " + roll1 + ".");
+            turnsTakenSolo++;
+            if (turnsTakenSolo == 1) {
+                document.getElementById("numRollsSolo").innerHTML = "You've taken 1 turn.";
+            } else if (turnsTakenSolo > 1) {
+                document.getElementById("numRollsSolo").innerHTML = "You've taken "+turnsTakenSolo+" turns."
+            }
+        }
+    </script>
+</body>
+
+</html>
