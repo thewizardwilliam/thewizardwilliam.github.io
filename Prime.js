@@ -2,7 +2,7 @@ function prime(num) {
   if (num === 1) return undefined;
   else if (num === 2) return true;
   else if (Number.isInteger(num) === false) {
-    if (num * 1 === NaN) return NaN;
+    if (num * 1 === NaN) return "Syntax Error: Expected an integer.";
     else return "Syntax Error: Expected an integer, but a decimal value was provided."
   }
   else if (num < 1) return "Range Error: Number is too low."
