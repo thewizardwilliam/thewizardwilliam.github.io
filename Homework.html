@@ -10,7 +10,7 @@
     <button onclick="localStorage.setItem(prompt('Assignment'),prompt('Due date'));location.reload()">Add assignment</button>
     <button onclick="localstorage.removeItem(prompt('Assignment'));location.reload()">Remove/complete assignment</button>
     <script>
-        document.write(JSON.stringify(localStorage).replaceAll("{","").replaceAll("}",""));
+        document.write("<br />"+JSON.stringify(localStorage).replaceAll("{","").replaceAll("}","").replaceAll('"',"").replaceAll(",","<br />"));
     </script>
 </body>
 </html>
