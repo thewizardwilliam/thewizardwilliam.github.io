@@ -15,7 +15,7 @@
     <script>
         let p = new URLSearchParams(location.search);
         if (p.has("A") && p.has("D")) {
-            localStorage.setItem(p.get("A").decodeURI(),p.get("D").decodeURI());
+            localStorage.setItem(decodeURI(p.get("A").toString()),decodeURI(p.get("D").toString()));
             location.replace("https://thewizardwilliam.github.io/Agenda.html");
         }
         document.write("<br />"+JSON.stringify(localStorage).replaceAll("{","").replaceAll("}","").replaceAll('"',"").replaceAll(",","<br />"));
