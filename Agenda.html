@@ -11,7 +11,7 @@
     <button onclick="localStorage.setItem(prompt('Assignment'),prompt('Due date'));location.reload()">Add assignment/Edit due date</button>
     <button onclick="localStorage.removeItem(prompt('Assignment'));location.reload()">Remove/complete assignment</button>
     <button onclick="c(confirm('Are you sure you\'d like to clear all assignments?'))">Clear agenda</button>
-    <button onclick="let url = 'https://thewizardwilliam.github.io/Agenda.html?A='+encodeURI(prompt('Assignment').toString())+'&D='+encodeURI(prompt('Due date').toString());navigator.clipboard.writeText(url);location.reload()">Create and copy assignment URL</button>
+    <button onclick="let url = 'https://thewizardwilliam.github.io/Agenda.html?A='+encodeURI(prompt('Assignment').toString())+'&D='+encodeURI(prompt('Due date').toString());focus();navigator.clipboard.writeText(url);location.reload()">Create and copy assignment URL</button>
     <script>
         let p = new URLSearchParams(location.search);
         if (p.has("A") && p.has("D")) {
