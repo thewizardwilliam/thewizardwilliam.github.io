@@ -12,7 +12,7 @@
     <button onclick="localStorage.removeItem(prompt('Assignment'));location.reload()">Remove/complete assignment</button>
     <button onclick="c(confirm('Are you sure you\'d like to clear all assignments?'))">Clear agenda</button>
     <script>
-        let p = new URLSearchParams(location.search());
+        let p = new URLSearchParams(location.search);
         if (p.has("A") && p.has("D")) {
             localStorage.setItem(p.get("A"),p.get("D"));
             location.replace("https://thewizardwilliam.github.io/Agenda.html");
