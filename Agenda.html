@@ -8,10 +8,15 @@
     <link rel="icon" href="Sarcasm%20Icon.svg">
 </head>
 <body>
-    <button onclick="localStorage.setItem(prompt('Assignment'),prompt('Due date'));location.reload()">Add assignment</button>
+    <button onclick="localStorage.setItem(prompt('Assignment'),prompt('Due date'));location.reload()">Add assignment/Edit due date</button>
     <button onclick="localStorage.removeItem(prompt('Assignment'));location.reload()">Remove/complete assignment</button>
     <button onclick="c(confirm('Are you sure you\'d like to clear all assignments?'))">Clear agenda</button>
     <script>
+        let p = new URLSearchParams(location.search());
+        if (p.has("A") && p.has("D")) {
+            localStorage.setItem(p.get("A"),p.get("D")));
+            location.replace("https://thewizardwilliam.github.io/Agenda.html");
+        }
         document.write("<br />"+JSON.stringify(localStorage).replaceAll("{","").replaceAll("}","").replaceAll('"',"").replaceAll(",","<br />"));
         function c(bool) {
             if (bool === true) {
