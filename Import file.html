@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#11822;Digital Agenda - thewizardwilliam.github.io</title>
+    <link rel="icon" href="Sarcasm%20Icon.svg">
+</head>
+<body>
+    <input type="file" id="f">
+    <button onclick="fetch(URL.createObjectURL(new Blob(document.getElementById('f').files))).then((r) => r.text()).then((code) => {localStorage.json = code})">Import</button>
+</body>
+</html>
