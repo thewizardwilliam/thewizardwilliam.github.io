@@ -9,6 +9,15 @@
 </head>
 <body>
     <input type="file" id="f">
-    <button onclick="let ip;fetch(window.URL.createObjectURL(new Blob(document.getElementById('f').files))).then((r) => r.text()).then((code) => {ip = JSON.parse(code)});for (let i = 0;i < Object.keys(ip).length;i++) {window.localStorage.setItem(Object.keys(ip)[i],ip['Object.keys(ip)[i]'])}">Import</button>
+    <button onclick="import()">Import</button>
+    <script>
+        let ip;
+        fetch(URL.createObjectURL(new Blob(document.getElementById('f').files)))
+            .then((r) => r.text())
+            .then((code) => {ip = JSON.parse(code)});
+        for (let i = 0;i < Object.keys(ip).length;i++) {
+            localStorage.setItem(Object.keys(ip)[i],ip['Object.keys(ip)[i]'])
+        }
+    </script>
 </body>
 </html>
