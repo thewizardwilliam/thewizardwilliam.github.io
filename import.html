@@ -9,6 +9,6 @@
 </head>
 <body>
     <input type="file" id="f">
-    <button onclick="fetch(window.URL.createObjectURL(new Blob(document.getElementById('f').files))).then((r) => r.text()).then((code) => {localStorage = code})">Import</button>
+    <button onclick="let ip;fetch(window.URL.createObjectURL(new Blob(document.getElementById('f').files))).then((r) => r.text()).then((code) => {ip = JSON.parse(code)});">Import</button>
 </body>
 </html>
