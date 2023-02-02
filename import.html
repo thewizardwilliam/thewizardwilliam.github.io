@@ -14,7 +14,7 @@
         function imp() {
             let f = document.getElementById("f");
             fetch(URL.createObjectURL(new Blob(f.files,{type:"text/json"})))
-            .then((j) => JSON.stringify(j.text()))
+            .then((j) => JSON.parse(j.text()))
             .then((v) => {
                 localStorage.clear()
                 for (let i = 0;i < Object.keys(v).length;i++) {
