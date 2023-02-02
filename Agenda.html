@@ -12,7 +12,7 @@
     <button onclick="localStorage.removeItem(prompt('Assignment'));location.reload()">Remove/complete assignment</button>
     <button onclick="let o = prompt('Assignment');let n = prompt('New name (avoid using quotes and commas)');localStorage.setItem(n,localStorage.getItem(o));localStorage.removeItem(o);location.reload()">Edit Assignment Name</button>
     <button onclick="c(confirm('Are you sure you\'d like to clear all assignments?'))">Clear agenda</button>
-    <button onclick="window.open('import.html')">Import</button>
+    <button onclick="let w = window.open('import.html');load = () => {w.close();wnidow.location.reload()}">Import</button>
     <button onclick="let a = document.createElement('a');a.href = window.URL.createObjectURL(new File([JSON.stringify(localStorage)],'Agenda.json',{type:'text/json'}));a.download = 'Agenda.json';a.click();a.remove()">Export</button>
     <button onclick="document.getElementsByTagName('body')[0].innerHTML = 'https://thewizardwilliam.github.io/Agenda.html?A='+encodeURI(prompt('Assignment (avoid using quotes and commas)').toString())+'&D='+encodeURI(prompt('Due date (avoid using quotes and commas)').toString())">Create assignment URL</button>
     <script>
