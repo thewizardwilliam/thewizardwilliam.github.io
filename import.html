@@ -12,13 +12,16 @@
     <button onclick="imp()">Import</button>
     <script>
         function imp() {
-            let ip;
-            fetch(URL.createObjectURL(new Blob(document.getElementById('f').files)))
-                .then((r) => r.text())
-                .then((code) => {ip = JSON.parse(code)});
-            for (let i = 0;i < Object.keys(ip).length;i++) {
-                localStorage.setItem(Object.keys(ip)[i],ip['Object.keys(ip)[i]'])
-            }
+            let f = document.getElementById("f");
+            fetch(URL.createObjectURL(new Blob(f.files,{type:"text/json"})))
+            .then((j) => j.json())
+            .then((v) => {
+                localStorage.clear()
+                for (let i = 0;i < Object.keys(v).length;i++) {
+                    localStorage.setItem(Object.keys(v)[i].toString(),v[Object.keys(v)[i].toString()]);
+                }
+            })
+            window.top.load();
         }
     </script>
 </body>
