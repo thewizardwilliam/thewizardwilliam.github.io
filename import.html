@@ -14,15 +14,14 @@
         function imp() {
             let f = document.getElementById("f");
             fetch(URL.createObjectURL(new Blob(f.files,{type:"text/json"})))
-            .then((j) => j)
+            .then((j) => j.json())
             .then((v) => {
-                v = JSON.parse(v);
-                localStorage.clear();
+                localStorage.clear()
                 for (let i = 0;i < Object.keys(v).length;i++) {
                     localStorage.setItem(Object.keys(v)[i].toString(),v[Object.keys(v)[i].toString()]);
                 }
             })
-            history.back();
+            history.back()
         }
     </script>
 </body>
