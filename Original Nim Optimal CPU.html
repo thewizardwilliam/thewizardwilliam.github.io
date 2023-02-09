@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nim</title>
+</head>
+<body>
+    <button onclick="rem()" id="b">Remove one (3 remaining)</button>
+    <span id="n"></span>
+    <br />
+    <button onclick="com()" id="t">Play Unbeatable</button>
+    <br />
+    <br />
+    <button onclick="n = max;c = 3;s = 0">Reset</button>
+    <script>
+        let c = 3,b = document.getElementById("b"),e = document.getElementById("n"),s = 0,max = 25,n = max;
+        setInterval(() => {b.innerHTML = "Remove one ("+c+" remaining)";e.innerHTML = n;b.disabled = (c == 0 || n == 0);t.disabled = ((c == 3 && s == 1)|| n == 0);t.innerHTML = (s == 1) ? "End Turn" : "Play Unbeatable"});
+        function com() {
+            if (n % 4 == 0 && n != 0) {
+                n -= Math.floor(Math.random() * 3) + 1;
+            }
+            else {
+                n = 4 * Math.floor((n - 1) / 4);
+            }
+            if (n == 0) {
+                alert("I win!");
+            }
+            c = 3;
+            s = 1;
+        }
+        function rem() {
+            c--;
+            n--;
+            s = 1;
+            if (n == 0) {
+                alert("You win!");
+                c = 0;
+            }
+        }
+    </script>
+</body>
+</html>
