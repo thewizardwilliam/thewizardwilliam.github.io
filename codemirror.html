@@ -16,7 +16,7 @@
     <script>
         function mirror(code) {
             document.getElementsByTagName("iframe")[0].src = URL.createObjectURL(new Blob([code],{type:"text/html"}));
-            document.getElementsByTagName("a").href = document.getElementsByTagName("iframe")[0].src;
+            document.getElementsByTagName("a")[0].href = document.getElementsByTagName("iframe")[0].src;
         }
     </script>
 </body>
