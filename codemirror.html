@@ -8,9 +8,10 @@
     <link rel="icon" href="Sarcasm%20Icon.svg" />
 </head>
 <body>
-    <textarea cols="30" rows="10" placeholder="Code"></textarea>
+    <textarea cols="30" rows="10" placeholder="Code" style="font-family: monospace;" autocapitalize="false" spellcheck="false" autocorrect="off"></textarea>
     <button onclick="mirror(document.getElementsByTagName('textarea')[0].value)">Run ></button>
     <iframe src></iframe>
+    <button onclick="open(document.getElementsByTagName('iframe')[0].src)">Open in New Tab</button>
     <script>
         function mirror(code) {
             document.getElementsByTagName("iframe")[0].src = URL.createObjectURL(new Blob([code],{type:"text/html"}))
