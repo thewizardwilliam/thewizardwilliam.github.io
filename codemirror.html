@@ -12,7 +12,7 @@
     <button onclick="mirror(document.getElementsByTagName('textarea')[0].value)">Run ></button>
     <iframe src></iframe>
     <br />
-    <a href target="_blank">Open in New Tab</a>
+    <a href target="_blank"><button>Open in New Tab</button></a>
     <script>
         function mirror(code) {
             document.getElementsByTagName("iframe")[0].src = URL.createObjectURL(new Blob([code],{type:"text/html"}));
