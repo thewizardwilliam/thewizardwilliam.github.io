@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>&#11822;Parallel Resistance Calculator - thewizardwilliam.github.io</title>
+<link rel="icon" href="Sarcasm%20Icon.svg">
+</head>
+<body>
+<script>
+let n = Number(prompt("Number of resistors in parallel")),s = 0,m,b = 1;
+for (let i = 0;i < n;i++) {
+s += 1 / prompt(`R${i + 1}`);
+}
+s = 1 / s;
+if (s >= 1000000000000) {
+m = "T"
+b = 1000000000000;
+} else if (s >= 1000000000) {
+m = "G"
+b = 1000000000;
+} else if (s >= 1000000) {
+m = "M"
+b = 1000000;
+} else if (s >= 1000) {
+m = "k"
+b = 1000;
+} else if (s >= 1) {
+m = ""
+} else if (s >= 0.001) {
+m = "m"
+b = 0.001;
+} else if (s >= 0.000001) {
+m = "µ"
+b = 0.000001;
+} else if (s >= 0.000000001) {
+m = "n"
+b = 0.000000001;
+} else if (s >= 0.000000000001) {
+m = "p"
+b = 0.000000000001;
+}
+document.write(`Total resistance: ${s / b} ${m}Ω<br />`);
+</script>
+</body>
+</html>
