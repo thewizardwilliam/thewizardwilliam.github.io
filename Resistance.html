@@ -9,9 +9,10 @@
 </head>
 <body>
 <script>
-let n = Number(prompt("Number of resistors in parallel")),s = 0,m,b = 1;
-for (let i = 0;i < n;i++) {
-s += 1 / prompt(`R${i + 1}`);
+let s = 0,m,b = 1,n = prompt("R1");
+for (let i = 2;1 / Number(n) != Infinity;i++) {
+s += 1 / n;
+n = prompt(`R${i}\n(Cancel after last value)`);
 }
 s = 1 / s;
 if (s >= 1000000000000) {
