@@ -10,7 +10,7 @@
 <body>
 <script>
 let e = prompt("Expected Value"),m = prompt("Measured Value");
-alert(`${(e - m) / e * 100}%`);
+alert(`${Math.abs((e - m) / e * 100)}%`);
 location.reload();
 </script>
 </body>
