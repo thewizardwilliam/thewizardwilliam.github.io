@@ -15,7 +15,7 @@
     <br />
 <script>
 let e = prompt("Expected Value"),m = prompt("Measured Value");
-confirm(`${Math.abs((e - m) / e * 100)}%\n(Tap OK to reload)`);
+if (confirm(`${Math.abs((e - m) / e * 100)}%\n(Tap OK to reload)`)) {location.reload()}
 </script>
 </body>
 </html>
