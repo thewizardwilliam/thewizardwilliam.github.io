@@ -13,10 +13,9 @@
         <b>thewizardwilliam.github.io</b>
     </a>
     <br />
-    <button onclick="location.reload()">Reload</button>
 <script>
 let e = prompt("Expected Value"),m = prompt("Measured Value");
-alert(`${Math.abs((e - m) / e * 100)}%`);
+confirm(`${Math.abs((e - m) / e * 100)}%\n(Tap OK to reload)`);
 </script>
 </body>
 </html>
