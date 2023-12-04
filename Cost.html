@@ -9,11 +9,12 @@
 </head>
 <body>
     <script>
-        document.write(`<button onclick="update()">Update</button><br />\$${(localStorage.cost) ? localStorage.cost.toFixed(2) : "0.00"}`);
+        document.write(`<button onclick="update()">Update</button><br />\$${(!localStorage.cost) ? "0.00" : localStorage.cost.toFixed(2)}`);
         update = () => {
             if (!localStorage.cost) {localStorage.cost = 0}
             localStorage.cost = (100 * localStorage.cost + 100 * prompt("Value")) / 100;
         }
+        location.reload()
     </script>
 </body>
 </html>
