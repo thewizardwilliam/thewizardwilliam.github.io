@@ -13,8 +13,8 @@
         update = () => {
             if (!localStorage.cost) {localStorage.cost = 0}
             localStorage.cost = (100 * localStorage.cost + 100 * prompt("Value")) / 100;
+            location.reload();
         }
-        location.reload()
     </script>
 </body>
 </html>
