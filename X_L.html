@@ -14,8 +14,8 @@
     </a>
     <br />
 <script>
-    let L = Number(prompt("Inductance in Henry's")),f = Number(prompt("Frequency in Hertz"));
-    alert(`${2 * Math.PI * F * L}Ω`);
+    let L = Number(prompt("Inductance (H)")),f = Number(prompt("Frequency (Hz)"));
+    if (confirm(`${2 * Math.PI * F * L}Ω\n(Press OK to reload)`)) {location.reload()};
 </script>
 </body>
 </html>
