@@ -13,9 +13,10 @@
         <b>thewizardwilliam.github.io</b>
     </a>
     <br />
+<script src="engNot.js"></script>
 <script>
     let L = Number(prompt("Inductance (H)")),f = Number(prompt("Frequency (Hz)"));
-    if (confirm(`${2 * Math.PI * f * L}Ω\n(Press OK to reload)`) === true) {
+    if (confirm(`${engNot(2 * Math.PI * f * L)}Ω\n(Press OK to reload)`) === true) {
         location.reload()
     }
 </script>
