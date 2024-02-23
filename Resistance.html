@@ -15,10 +15,10 @@
     <br />
 <script src="engNot.js"></script>
 <script>
-let s = 0,m,b = 1,n = prompt("R1");
+let s = 0,m,b = 1,n = prompt("R1 (Ω)");
 for (let i = 2;1 / Number(n) != Infinity;i++) {
 s += 1 / n;
-n = prompt(`R${i}\n(Double tap OK when done)`);
+n = prompt(`R${i} (Ω)\n(Double tap OK when done)`);
 }
 s = 1 / s;
 if (confirm(`Total resistance: ${engNot(s)}Ω\n(Press OK to reload)`)) {location.reload()}
