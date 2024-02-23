@@ -13,9 +13,10 @@
         <b>thewizardwilliam.github.io</b>
     </a>
     <br />
+<script src="engNot.js"></script>
 <script>
 let r = prompt("Resistance (Ω)"),x = prompt("Reactance (Ω)");
-if (confirm(`Impedance: ${Math.sqrt(1 / (1 / r / r + 1 / x / x))}Ω\n(Press OK to reload)`)) {location.reload()}
+if (confirm(`Impedance: ${engNot(Math.sqrt(1 / (1 / r / r + 1 / x / x)))}Ω\n(Press OK to reload)`)) {location.reload()}
 </script>
 </body>
 </html>
