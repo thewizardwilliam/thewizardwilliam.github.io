@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>&#11822;Resonance Frequency Calculator - thewizardwilliam.github.io</title>
 <link rel="icon" href="Sarcasm%20Icon.svg">
+<noscript><meta http-equiv="refresh" content="0;URL='https://thewizardwilliam.github.io/nos.html?redirect=ResFre.html'" /></noscript>
 </head>
 <body>
 <a href="index.html" style="font-size: 25px;color: #000;font-family: monospace">
@@ -15,7 +16,7 @@
     <br />
 <script src="engNot.js"></script>
 <script>
-let L = prompt("Inductance (H)"),C = prompt("Capacitance (F)");
+let L = prompt("Inductance (mH)") / 1000,C = prompt("Capacitance (µF)") / 1000000;
 if (confirm(`${engNot(1 / 2 / Math.PI / Math.sqrt(L * C))}Hz\n(Press OK to reload)`)) {location.reload()}
 </script>
 </body>
