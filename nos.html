@@ -9,6 +9,10 @@
     <br />
     Please enable JavaScript to continue using this webpage.</pre></noscript>
     <script>
+      let p = new URLSearchParams(location.search);
+      if (p.has("redirect")) {
+        location.replace(`https://thewizardwilliam.github.io/${p.get("redirect")}`);
+      } else {location.replace("https://thewizardwilliam.github.io")}
       history.back();
     </script>
   </body>
