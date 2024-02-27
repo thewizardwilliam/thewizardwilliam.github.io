@@ -11,3 +11,6 @@ is a collection of small projects, such as:
 </ul>
 
 and <a href="https://thewizardwilliam.github.io">more</a>.
+
+
+###### You can find a usage guide <a href="about/guide.html">here</a>.
