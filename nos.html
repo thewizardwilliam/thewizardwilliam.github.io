@@ -12,8 +12,7 @@
       let p = new URLSearchParams(location.search);
       if (p.has("redirect")) {
         location.replace(`https://thewizardwilliam.github.io/${p.get("redirect")}`);
-      } else {location.replace("https://thewizardwilliam.github.io")}
-      history.back();
+      } else {history.back()}
     </script>
   </body>
 </html>
