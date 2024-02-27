@@ -13,4 +13,4 @@ is a collection of small projects, such as:
 and <a href="https://thewizardwilliam.github.io">more</a>.
 
 
-###### You can find a usage guide <a href="about/guide.html">here</a>.
+###### You can find a usage guide <a href="https://thewizardwilliam.github.io/about/guide.html">here</a>.
