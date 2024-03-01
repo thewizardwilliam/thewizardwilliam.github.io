@@ -6,12 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>&#11822;RLC Circuit Solver - thewizardwilliam.github.io</title>
 <link rel="icon" href="Sarcasm%20Icon.svg">
-<noscript><meta http-equiv="refresh" content="0;URL='https://thewizardwilliam.github.io/nos.html?redirect=RLC.html'" /></noscript>
+<noscript><meta http-equiv="refresh" content="0;URL='https://thewizardwilliam.github.io/nos.html'" /></noscript>
 </head>
 <body>
 <script src="engNot.js"></script>
 <script>
-let V = prompt("Source voltage"),f = prompt("Frequency (Hz)"),par = confirm("Press OK if parallel"),R = prompt("Resistance (Ω)"),L = prompt("Inductance (mH)") / 1000,C = prompt("Capacitance (µF)") / 1000000;
+let V = prompt("Source voltage"),f = prompt("Frequency (Hz)"),par = confirm("Press OK if parallel"),R = prompt("Resistance (Ω)"),L = prompt("Inductance (mH)") * 1000,C = prompt("Capacitance (µF)") * 1000000;
 if (par == true) {
 var X_L = 2 * Math.PI * f * L,X_C = 1 / 2 / Math.PI / f / C,X = Math.abs(X_C * X_L / (X_C - X_L)),Z = 1 / Math.sqrt(1 / R / R + 1 / X / X),I = V / Z,P_R = V * V / R,P_L = V * V / X_L,P_C = V * V / X_C,P_X = Math.abs(P_L - P_C),VA = Math.sqrt(P_R * P_R + P_X * P_X),PF = P_R / VA * 100,out = `Current through resistor: ${engNot(V / R)}A<br />Current through inductor: ${engNot(V / X_L)}A<br />Current through capacitor: ${engNot(V / X_C)}A<br />Total current: ${engNot(I)}A`;
 } else {
