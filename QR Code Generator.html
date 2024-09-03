@@ -21,7 +21,7 @@
         function qr() {
             let tf = encodeURI(document.getElementById("t").value).replaceAll("?","%3F").replaceAll("=","%3D");
             let q = document.getElementById("q");
-            q.src = "https://chart.googleapis.com/chart?cht=qr&chl="+tf.toString()+"&chs=500x500";
+            q.src = "https://quickchart.io/qr?text="+tf.toString();
             q.hidden = false;
         }
     </script>
