@@ -19,7 +19,7 @@
     <image src hidden id="q" />
     <script>
         function qr() {
-            let tf = encodeURI(document.getElementById("t").value).replaceAll("?","%3F").replaceAll("=","%3D").replaceAll("&","%26");
+            let tf = encodeURI(document.getElementById("t").value).replaceAll("?","%3F").replaceAll("=","%3D").replaceAll("&","%26").replaceAll("#","%23");
             let q = document.getElementById("q");
             q.src = "https://quickchart.io/qr?text="+tf.toString();
             q.hidden = false;
