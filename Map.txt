@@ -1,0 +1,22 @@
+https://thewizardwilliam.github.io/Agenda.html
+https://thewizardwilliam.github.io/Average.html
+https://thewizardwilliam.github.io/Check Prime Number.html
+https://thewizardwilliam.github.io/HTML.html
+https://thewizardwilliam.github.io/JS.html
+https://thewizardwilliam.github.io/Multiplication Facts.html
+https://thewizardwilliam.github.io/Nim.html
+https://thewizardwilliam.github.io/P-error.html
+https://thewizardwilliam.github.io/PZ.html
+https://thewizardwilliam.github.io/PyTh.html
+https://thewizardwilliam.github.io/QR Code Generator.html
+https://thewizardwilliam.github.io/RGB Color Viewer.html
+https://thewizardwilliam.github.io/RLC.html
+https://thewizardwilliam.github.io/ResFre.html
+https://thewizardwilliam.github.io/Resistance.html
+https://thewizardwilliam.github.io/Shut The Box.html
+https://thewizardwilliam.github.io/Tic-Tac-Toe.html
+https://thewizardwilliam.github.io/X_C.html
+https://thewizardwilliam.github.io/X_L.html
+https://thewizardwilliam.github.io/about.html
+https://thewizardwilliam.github.io/codemirror.html
+https://thewizardwilliam.github.io/about/guide.html
