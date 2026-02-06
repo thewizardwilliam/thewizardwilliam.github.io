@@ -1,19 +1,20 @@
+https://thewizardwilliam.github.io/index.html
 https://thewizardwilliam.github.io/Agenda.html
 https://thewizardwilliam.github.io/Average.html
-https://thewizardwilliam.github.io/Check Prime Number.html
+https://thewizardwilliam.github.io/Check%20Prime%20Number.html
 https://thewizardwilliam.github.io/HTML.html
 https://thewizardwilliam.github.io/JS.html
-https://thewizardwilliam.github.io/Multiplication Facts.html
+https://thewizardwilliam.github.io/Multiplication%20Facts.html
 https://thewizardwilliam.github.io/Nim.html
 https://thewizardwilliam.github.io/P-error.html
 https://thewizardwilliam.github.io/PZ.html
 https://thewizardwilliam.github.io/PyTh.html
-https://thewizardwilliam.github.io/QR Code Generator.html
-https://thewizardwilliam.github.io/RGB Color Viewer.html
+https://thewizardwilliam.github.io/QR%20Code%20Generator.html
+https://thewizardwilliam.github.io/RGB%20Color%20Viewer.html
 https://thewizardwilliam.github.io/RLC.html
 https://thewizardwilliam.github.io/ResFre.html
 https://thewizardwilliam.github.io/Resistance.html
-https://thewizardwilliam.github.io/Shut The Box.html
+https://thewizardwilliam.github.io/Shut%20The%20Box.html
 https://thewizardwilliam.github.io/Tic-Tac-Toe.html
 https://thewizardwilliam.github.io/X_C.html
 https://thewizardwilliam.github.io/X_L.html
