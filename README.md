@@ -12,7 +12,7 @@ is a collection of small projects, such as:
 
 and <a href="https://thewizardwilliam.github.io">more</a>.
 
-<small>(It also features some guy <a href="https://thewizardwilliam.github.io/Resume.pdf">bragging about himself for money</a>)<small>
+(It also features some guy <a href="https://thewizardwilliam.github.io/Resume.pdf">bragging about himself for money</a>)
 
 
 ###### You can find a usage guide <a href="https://thewizardwilliam.github.io/about/guide.html">here</a>.
