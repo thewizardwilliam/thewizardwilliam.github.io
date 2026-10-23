@@ -16,13 +16,14 @@
     <br />
     <textarea id="t" cols="30" rows="10" placeholder="Plaintext or full URL"></textarea>
     <button type="submit" onclick="qr()">Generate QR Code</button>
-    <image src hidden id="q" />
+    <a href="javascript:void(0)" target="_blank"><image src hidden id="q" /></a>
     <script>
         function qr() {
             let tf = encodeURI(document.getElementById("t").value).replaceAll("?","%3F").replaceAll("=","%3D").replaceAll("&","%26").replaceAll("#","%23");
             let q = document.getElementById("q");
             q.src = "https://quickchart.io/qr?text="+tf.toString()+"&format=svg";
             q.hidden = false;
+            document.getElementsByTagName("a")[1].href = "https://quickchart.io/qr?text="+tf.toString()+"&format=svg";
         }
     </script>
     <!--
