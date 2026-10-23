@@ -6,7 +6,7 @@ function prime(num) {
   else if (num < 1) return "Range Error: Number is too low."
   else {
     let r = true;
-    for (let i = 2;i < num - 1;i++) {
+    for (let i = 2;i <= Math.sqrt(num);i++) {
       if (num % i === 0) {
         r = false;
       }
